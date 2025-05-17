@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rifat Zaman | Frontend Web Developer</title>
+    <title>Rifat Zaman - Frontend Developer Portfolio</title>
     <meta
       name="description"
       content="Professional portfolio of Rifat Zaman, Frontend Web Developer specializing in responsive web applications"
@@ -30,7 +30,7 @@
 
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
 
@@ -50,11 +50,11 @@
     />
   </head>
   <body>
-    <!-- Header/Navigation -->
+    <!-- Header -->
     <header id="header" class="fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
-          <a class="navbar-brand fw-bold" href="#hero">Rifat Zaman</a>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">Rifat Zaman</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -88,1534 +88,1552 @@
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="d-flex align-items-center">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h1 class="fw-bold">Rifat Zaman</h1>
-            <h2 class="typed-text">Frontend Web Developer</h2>
-            <p class="lead mb-4">
-              Crafting responsive and visually appealing web experiences that
-              drive results.
-            </p>
-            <div class="hero-buttons">
-              <a
-                href="#projects"
-                class="btn btn-primary me-3"
-                onclick="scrollToSection('projects')"
-                >View Projects</a
-              >
-              <a
-                href="#contact"
-                class="btn btn-outline-primary"
-                onclick="scrollToSection('contact')"
-                >Contact Me</a
-              >
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section id="hero" class="d-flex align-items-center">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h1 class="fw-bold">Rifat Zaman</h1>
+              <h2 class="typed-text">Frontend Web Developer</h2>
+              <p class="lead mb-4">
+                Crafting responsive and visually appealing web experiences that
+                drive results.
+              </p>
+              <div class="hero-buttons">
+                <a
+                  href="#projects"
+                  class="btn btn-primary me-3"
+                  onclick="scrollToSection('projects')"
+                  >View Projects</a
+                >
+                <a
+                  href="#contact"
+                  class="btn btn-outline-primary"
+                  onclick="scrollToSection('contact')"
+                  >Contact Me</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <div class="hero-image-container">
+                <img
+                  src="images/backgrounds/rifat-3.png"
+                  alt="Rifat Zaman - Frontend Developer"
+                  class="img-fluid hero-img"
+                  loading="lazy"
+                />
+                <div class="hero-image-glow"></div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6 text-center">
-            <div class="hero-image-container">
-              <img
-                src="images/backgrounds/rifat-3.png"
-                alt="Rifat Zaman - Frontend Developer"
-                class="img-fluid hero-img"
-                loading="lazy"
-              />
-              <div class="hero-image-glow"></div>
-            </div>
-          </div>
+
+          <!-- Floating shapes for modern design -->
+          <div class="floating-shape shape-1"></div>
+          <div class="floating-shape shape-2"></div>
+          <div class="floating-shape shape-3"></div>
         </div>
+      </section>
 
-        <!-- Floating shapes for modern design -->
-        <div class="floating-shape shape-1"></div>
-        <div class="floating-shape shape-2"></div>
-        <div class="floating-shape shape-3"></div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5">
-      <div class="container">
-        <div class="section-title text-center mb-5 fade-in-up">
-          <h2>About Me</h2>
-          <div class="title-line"></div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 fade-in-up">
-            <h3>Professional Summary</h3>
-            <p>
-              I'm a passionate Frontend Web Developer with expertise in creating
-              responsive web applications and implementing complex UI/UX
-              designs. I have extensive experience working remotely with
-              international teams, bringing creative solutions to digital
-              challenges.
-            </p>
-
-            <div class="mt-4">
-              <h4>Education</h4>
-              <div class="education-item">
-                <h5>Bachelor of Science in Information Technology</h5>
-                <p>University of Gujrat | CGPA: 3.26/4.00</p>
-              </div>
-            </div>
+      <!-- About Section -->
+      <section id="about" class="py-5">
+        <div class="container">
+          <div class="section-title text-center mb-5 fade-in-up">
+            <h2>About Me</h2>
+            <div class="title-line"></div>
           </div>
-          <div class="col-lg-6">
-            <div class="about-info fade-in-up delay-2">
-              <div class="info-item">
-                <h4>Languages</h4>
-                <span class="badge me-2 mb-2">English</span>
-                <span class="badge me-2 mb-2">Urdu</span>
-              </div>
-
-              <div class="info-item mt-3">
-                <h4>Certifications</h4>
-                <div class="certification-item">
-                  <i class="fas fa-certificate me-2"></i>
-                  <span>ReactJS Development</span>
-                </div>
-                <div class="certification-item">
-                  <i class="fas fa-certificate me-2"></i>
-                  <span>Data Analysis</span>
-                </div>
-              </div>
-
-              <div class="about-counters row mt-4 stagger-group">
-                <div class="col-6">
-                  <div class="counter-box text-center tilt-effect stagger-item">
-                    <div class="counter" data-count="2">0</div>
-                    <p>Years Experience</p>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="counter-box text-center tilt-effect stagger-item">
-                    <div class="counter" data-count="16">0</div>
-                    <p>Projects Completed</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-5 bg-light">
-      <div class="container">
-        <div class="section-title text-center mb-5 fade-in-up">
-          <h2>Work Experience</h2>
-          <div class="title-line"></div>
-        </div>
-
-        <div class="timeline stagger-group">
-          <!-- Job 1 -->
-          <div class="timeline-item stagger-item">
-            <div class="timeline-badge">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="timeline-card card tilt-effect">
-              <div class="card-body">
-                <div class="d-flex justify-content-between mb-3">
-                  <h4 class="card-title">
-                    UI/UX Designer & Frontend Developer
-                  </h4>
-                  <span class="badge status-active">Present</span>
-                </div>
-                <h5>Dynamic Service Solutions, UK (Remote)</h5>
-                <p class="text-muted">November 2024 - Present</p>
-                <p>
-                  Working as a Frontend Developer to create responsive and
-                  user-friendly interfaces for web applications.
-                </p>
-                <div class="mt-3">
-                  <h6>Key Responsibilities:</h6>
-                  <ul>
-                    <li>
-                      Implementing responsive web designs using HTML, CSS, and
-                      Bootstrap
-                    </li>
-                    <li>
-                      Creating UI/UX designs in Figma for all website projects
-                    </li>
-                    <li>
-                      Translating Figma designs into functional frontend code
-                    </li>
-                    <li>Developing interactive UI components with jQuery</li>
-                    <li>Collaborating with international team members</li>
-                  </ul>
-                </div>
-                <div class="tech-stack">
-                  <span class="badge me-1">HTML5</span>
-                  <span class="badge me-1">CSS3</span>
-                  <span class="badge me-1">Bootstrap</span>
-                  <span class="badge me-1">jQuery</span>
-                  <span class="badge me-1">Figma</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Job 2 -->
-          <div class="timeline-item stagger-item delay-1">
-            <div class="timeline-badge">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="timeline-card card tilt-effect">
-              <div class="card-body">
-                <div class="d-flex justify-content-between mb-3">
-                  <h4 class="card-title">Frontend Developer</h4>
-                  <span class="badge status-active">Present</span>
-                </div>
-                <h5>Angelic Insurance, Australia (Remote)</h5>
-                <p class="text-muted">November 2024 - Present</p>
-                <p>
-                  Developing and maintaining responsive web interfaces for
-                  insurance management systems.
-                </p>
-                <div class="mt-3">
-                  <h6>Key Responsibilities:</h6>
-                  <ul>
-                    <li>
-                      Building responsive interfaces with Bootstrap and custom
-                      CSS
-                    </li>
-                    <li>Implementing client-side validation with jQuery</li>
-                    <li>Creating interactive data visualizations</li>
-                  </ul>
-                </div>
-                <div class="tech-stack">
-                  <span class="badge me-1">HTML5</span>
-                  <span class="badge me-1">CSS3</span>
-                  <span class="badge me-1">Bootstrap</span>
-                  <span class="badge me-1">jQuery</span>
-                  <span class="badge me-1">Chart.js</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Job 3 -->
-          <div class="timeline-item stagger-item">
-            <div class="timeline-badge">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="timeline-card card tilt-effect">
-              <div class="card-body">
-                <div class="d-flex justify-content-between mb-3">
-                  <h4 class="card-title">Frontend Developer</h4>
-                  <span class="badge">Past</span>
-                </div>
-                <h5>TakweenIt, Oman (Hybrid)</h5>
-                <p class="text-muted">March 2024 - October 2024</p>
-                <p>
-                  Developed frontend interfaces for enterprise applications with
-                  a focus on performance and user experience.
-                </p>
-                <div class="mt-3">
-                  <h6>Key Responsibilities:</h6>
-                  <ul>
-                    <li>
-                      Designing and implementing UI components using Bootstrap
-                    </li>
-                    <li>
-                      Building React.js components for interactive user
-                      interfaces
-                    </li>
-                    <li>
-                      Developing custom themes and modules for DNN (DotNetNuke)
-                      CMS
-                    </li>
-                    <li>
-                      Optimizing web performance for better user experience
-                    </li>
-                    <li>
-                      Collaborating with backend developers to integrate APIs
-                    </li>
-                  </ul>
-                </div>
-                <div class="tech-stack">
-                  <span class="badge me-1">HTML5</span>
-                  <span class="badge me-1">CSS3</span>
-                  <span class="badge me-1">Bootstrap</span>
-                  <span class="badge me-1">jQuery</span>
-                  <span class="badge me-1">React.js</span>
-                  <span class="badge me-1">DNN CMS</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Job 4 -->
-          <div class="timeline-item stagger-item">
-            <div class="timeline-badge">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="timeline-card card tilt-effect">
-              <div class="card-body">
-                <div class="d-flex justify-content-between mb-3">
-                  <h4 class="card-title">Frontend Developer</h4>
-                  <span class="badge">Past</span>
-                </div>
-                <h5>Smart Destinations, Islamabad (OnSite)</h5>
-                <p class="text-muted">September 2023 - March 2024</p>
-                <p>
-                  Developed and maintained tourism-related web applications with
-                  a focus on user experience and responsive design.
-                </p>
-                <div class="mt-3">
-                  <h6>Key Responsibilities:</h6>
-                  <ul>
-                    <li>Implementing responsive designs for travel websites</li>
-                    <li>Creating interactive maps and booking interfaces</li>
-                    <li>
-                      Developing with Vue.js and integrating Laravel Blade
-                      templates
-                    </li>
-                    <li>
-                      Creating UI/UX designs in Figma and Canva for client
-                      approval
-                    </li>
-                    <li>
-                      Building responsive interfaces with Tailwind CSS and
-                      Bootstrap
-                    </li>
-                    <li>Optimizing frontend performance</li>
-                  </ul>
-                </div>
-                <div class="tech-stack">
-                  <span class="badge me-1">HTML5</span>
-                  <span class="badge me-1">CSS3</span>
-                  <span class="badge me-1">Bootstrap</span>
-                  <span class="badge me-1">jQuery</span>
-                  <span class="badge me-1">Leaflet.js</span>
-                  <span class="badge me-1">Vue.js</span>
-                  <span class="badge me-1">Tailwind CSS</span>
-                  <span class="badge me-1">Laravel Blade</span>
-                  <span class="badge me-1">Figma</span>
-                  <span class="badge me-1">Canva</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-5">
-      <div class="container">
-        <div class="section-title text-center mb-5 fade-in-up">
-          <h2>Technical Skills</h2>
-          <div class="title-line"></div>
-        </div>
-
-        <div class="row">
-          <!-- Frontend Skills -->
-          <div class="col-lg-6 mb-4 fade-in-up">
-            <div class="card skills-card h-100">
-              <div class="card-header">
-                <h4 class="mb-0"><i class="fas fa-code me-2"></i>Frontend</h4>
-              </div>
-              <div class="card-body">
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between">
-                    <h6>HTML5</h6>
-                    <span>90%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 90%"
-                      aria-valuenow="90"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="skill-item mt-3">
-                  <div class="d-flex justify-content-between">
-                    <h6>CSS3</h6>
-                    <span>85%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 85%"
-                      aria-valuenow="85"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="skill-item mt-3">
-                  <div class="d-flex justify-content-between">
-                    <h6>JavaScript</h6>
-                    <span>80%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 80%"
-                      aria-valuenow="80"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="skill-item mt-3">
-                  <div class="d-flex justify-content-between">
-                    <h6>ReactJS</h6>
-                    <span>75%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 75%"
-                      aria-valuenow="75"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="skill-item mt-3">
-                  <div class="d-flex justify-content-between">
-                    <h6>Vue.js</h6>
-                    <span>70%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 70%"
-                      aria-valuenow="70"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="skill-item mt-3">
-                  <div class="d-flex justify-content-between">
-                    <h6>Chart.js</h6>
-                    <span>70%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 70%"
-                      aria-valuenow="70"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="skill-item mt-3">
-                  <div class="d-flex justify-content-between">
-                    <h6>Leaflet.js</h6>
-                    <span>65%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 65%"
-                      aria-valuenow="65"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="skill-item mt-3">
-                  <div class="d-flex justify-content-between">
-                    <h6>Laravel Blade</h6>
-                    <span>65%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 65%"
-                      aria-valuenow="65"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="skill-item mt-3">
-                  <div class="d-flex justify-content-between">
-                    <h6>HTMX</h6>
-                    <span>60%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 60%"
-                      aria-valuenow="60"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Other Skills -->
-          <div class="col-lg-6 fade-in-up delay-2">
-            <div class="row">
-              <!-- CSS Frameworks -->
-              <div class="col-12 mb-4">
-                <div class="card skills-card">
-                  <div class="card-header">
-                    <h4 class="mb-0">
-                      <i class="fas fa-paint-brush me-2"></i>CSS Frameworks
-                    </h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row stagger-group">
-                      <div class="col-6">
-                        <div class="skill-tag stagger-item">
-                          <i class="fab fa-bootstrap me-2"></i>
-                          <span>Bootstrap</span>
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="skill-tag stagger-item delay-1">
-                          <i class="fab fa-css3 me-2"></i>
-                          <span>Tailwind CSS</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- CMS -->
-              <div class="col-12 mb-4">
-                <div class="card skills-card">
-                  <div class="card-header">
-                    <h4 class="mb-0">
-                      <i class="fas fa-file-alt me-2"></i>CMS
-                    </h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row stagger-group">
-                      <div class="col-6">
-                        <div class="skill-tag stagger-item">
-                          <i class="fab fa-wordpress me-2"></i>
-                          <span>WordPress</span>
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="skill-tag stagger-item delay-1">
-                          <i class="fas fa-database me-2"></i>
-                          <span>DNN CMS</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Design Tools -->
-              <div class="col-12 mb-4">
-                <div class="card skills-card">
-                  <div class="card-header">
-                    <h4 class="mb-0">
-                      <i class="fas fa-pencil-ruler me-2"></i>Design Tools
-                    </h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row stagger-group">
-                      <div class="col-6">
-                        <div class="skill-tag stagger-item">
-                          <i class="fab fa-figma me-2"></i> <span>Figma</span>
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="skill-tag stagger-item delay-1">
-                          <i class="fas fa-paint-brush me-2"></i>
-                          <span>Canva</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Tools & Others -->
-              <div class="col-12">
-                <div class="card skills-card">
-                  <div class="card-header">
-                    <h4 class="mb-0">
-                      <i class="fas fa-tools me-2"></i>Tools & Others
-                    </h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row skill-tools stagger-group">
-                      <div class="col-6 mb-3">
-                        <div class="skill-tag">
-                          <i class="fab fa-git-alt me-2"></i>
-                          <span>Git</span>
-                        </div>
-                      </div>
-                      <div class="col-6 mb-3">
-                        <div class="skill-tag">
-                          <i class="fab fa-github me-2"></i>
-                          <span>GitHub</span>
-                        </div>
-                      </div>
-                      <div class="col-6 mb-3">
-                        <div class="skill-tag">
-                          <i class="fab fa-jira me-2"></i>
-                          <span>Jira</span>
-                        </div>
-                      </div>
-                      <div class="col-6 mb-3">
-                        <div class="skill-tag">
-                          <i class="fas fa-code me-2"></i>
-                          <span>VS Code</span>
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="skill-tag">
-                          <i class="fas fa-window-maximize me-2"></i>
-                          <span>Visual Studio</span>
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="skill-tag">
-                          <i class="fab fa-chrome me-2"></i>
-                          <span>Chrome DevTools</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Floating shapes for design -->
-      <div class="floating-shape shape-4 parallax" data-speed="0.3"></div>
-      <div class="floating-shape shape-5 parallax" data-speed="0.2"></div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light">
-      <div class="container">
-        <div class="section-title text-center mb-5 fade-in-up">
-          <h2>My Projects</h2>
-          <div class="title-line"></div>
-        </div>
-
-        <div class="project-filters text-center mb-4 fade-in-up">
-          <button
-            class="btn btn-sm btn-outline-primary active me-2 mb-2 filter-btn"
-            data-filter="all"
-          >
-            All
-          </button>
-          <button
-            class="btn btn-sm btn-outline-primary me-2 mb-2 filter-btn"
-            data-filter="smart-dest"
-          >
-            Smart Destinations
-          </button>
-          <button
-            class="btn btn-sm btn-outline-primary me-2 mb-2 filter-btn"
-            data-filter="angelic"
-          >
-            Angelic Insurance
-          </button>
-          <button
-            class="btn btn-sm btn-outline-primary me-2 mb-2 filter-btn"
-            data-filter="dynamic"
-          >
-            Dynamic Solutions
-          </button>
-          <button
-            class="btn btn-sm btn-outline-primary me-2 mb-2 filter-btn"
-            data-filter="takween"
-          >
-            TakweenIt
-          </button>
-        </div>
-
-        <div class="row project-grid stagger-group">
-          <!-- Project 1: Angelic Insurance -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-2"
-            data-category="angelic"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images/angelic/angelic-inurance.png"
-                class="card-img-top"
-                alt="Angelic Insurance"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Angelic Insurance</h5>
-                <p class="card-text">
-                  A comprehensive insurance company website with quote
-                  calculator, policy management, and customer portal access.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">Bootstrap</span>
-                  <span class="badge">jQuery</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://www.angelicinsurance.com.au/"
-                    class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2: Wholly Digital -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-3"
-            data-category="angelic"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images/angelic/wholly-digital.png"
-                class="card-img-top"
-                alt="Wholly Digital"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Wholly Digital Company</h5>
-                <p class="card-text">
-                  Corporate website for Angelic Insurance's partner company,
-                  featuring service offerings, team profiles, and client success
-                  stories.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">Bootstrap</span>
-                  <span class="badge">jQuery</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://wholydigital.com.au/"
-                    class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3: Angelic Real Estate Dashboard -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
-            data-category="angelic"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images/angelic/angelic-will.png"
-                class="card-img-top"
-                alt="Angelic Real Estate Dashboard"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Angelic Will & Estate Dashboard</h5>
-                <p class="card-text">
-                  A comprehensive will & estate management dashboard with
-                  property listings, client management, and analytics
-                  visualization.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">Bootstrap</span>
-                  <span class="badge">Chart.js</span>
-                  <span class="badge">jQuery</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4: Oman Library -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
-            data-category="takween"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images/takween/oman-lib.png"
-                class="card-img-top"
-                alt="Oman Library"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Oman Library</h5>
-                <p class="card-text">
-                  A digital library platform developed for TakweenIt with
-                  advanced search capabilities, user accounts, and resource
-                  management.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">Bootstrap</span>
-                  <span class="badge">jQuery</span>
-                  <span class="badge">DNN CMS</span>
-                  <span class="badge">Chart.js</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://www.mol.om/?lang=en-GB"
-                    class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5: Muscat Stock Exchange (MSX) -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
-            data-category="takween"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images/takween/mse.png"
-                class="card-img-top"
-                alt="Muscat Stock Exchange"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Muscat Stock Exchange (MSX)</h5>
-                <p class="card-text">
-                  A comprehensive financial platform for the Muscat Stock
-                  Exchange featuring real-time market data, investor tools, and
-                  corporate information portal.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">Bootstrap</span>
-                  <span class="badge">jQuery</span>
-                  <span class="badge">DNN CMS</span>
-                  <span class="badge">Chart.js</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://www.msx.om/"
-                    class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 6: Toureast Travel Website (Main Website) -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
-            data-category="smart-dest"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images/smart-dest/toureast-main.png"
-                class="card-img-top"
-                alt="Toureast Travel Website"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Toureast Website (Main)</h5>
-                <p class="card-text">
-                  A comprehensive travel platform for Smart Destinations with
-                  interactive maps, booking system, and destination guides.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">Vue-Bootstrap</span>
-                  <span class="badge">jQuery</span>
-                  <span class="badge">Leaflet.js</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://www.toureast.net/"
-                    class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 7: Toureast Admin Panel -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
-            data-category="smart-dest"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images/smart-dest/toureast-admin.png"
-                class="card-img-top"
-                alt="Toureast Admin Panel"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Toureast Admin Panel</h5>
-                <p class="card-text">
-                  A powerful dashboard for managing travel packages, bookings,
-                  user accounts, and analytics for the Toureast travel platform.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">Bootstrap</span>
-                  <span class="badge">Chart.js</span>
-                  <span class="badge">jQuery</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://app.toureast.net/admin/"
-                    class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 8: Online Booking System -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
-            data-category="smart-dest"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images/smart-dest/online-toureast.png"
-                class="card-img-top"
-                alt="Online Booking System"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Online Booking System</h5>
-                <p class="card-text">
-                  A streamlined booking interface for Toureast with calendar
-                  integration, real-time availability, and secure payment
-                  processing.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">Vue-Bootstrap</span>
-                  <span class="badge">jQuery</span>
-                  <span class="badge">JavaScript</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://online.toureast.net/en/"
-                    class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 9: Partner Portal -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
-            data-category="smart-dest"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images/smart-dest/toureast-partner.png"
-                class="card-img-top"
-                alt="Partner Portal"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Partner Portal</h5>
-                <p class="card-text">
-                  A dedicated portal for travel agents and partners to manage
-                  bookings, commission tracking, and promotional content for
-                  Toureast.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge"> Vue-tailwind</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://partner.toureast.net/"
-                    class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 10: Collaboration Hub -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
-            data-category="smart-dest"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images/smart-dest/collaboration-hub.png"
-                class="card-img-top"
-                alt="Collaboration Hub"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Collaboration Hub</h5>
-                <p class="card-text">
-                  A centralized platform for Smart Destinations teams to
-                  collaborate on travel packages, marketing campaigns, and
-                  customer relationships.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">Bootstrap</span>
-                  <span class="badge">jQuery</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://collaborationhub.info/"
-                    class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 11: Travel Pakistani -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
-            data-category="smart-dest"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images/smart-dest/travelpakistani.png"
-                class="card-img-top"
-                alt="Travel Pakistani"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Travel Pakistani</h5>
-                <p class="card-text">
-                  A specialized travel platform for Smart Destinations focused
-                  on Pakistani tourism, featuring local destinations, cultural
-                  experiences, and tour packages.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">Bootstrap</span>
-                  <span class="badge">jQuery</span>
-                  <span class="badge">Leaflet.js</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://travelpakistani.com/"
-                    class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 12: Havion Digital Product -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item"
-            data-category="dynamic"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images/dynamic/hivion.png"
-                class="card-img-top"
-                alt="Havion Digital Product"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Havion Digital Product</h5>
-                <p class="card-text">
-                  An animated website for a digital product company showcasing
-                  innovative solutions with modern design and seamless
-                  animations.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">JavaScript</span>
-                  <span class="badge">GSAP</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 13: Havica Digital Product -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-1"
-            data-category="dynamic"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images//dynamic/havica.png"
-                class="card-img-top"
-                alt="Havica Digital Product"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Havica Digital Product</h5>
-                <p class="card-text">
-                  A stunning animated website for digital products with
-                  interactive UI elements and smooth scrolling effects.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">JavaScript</span>
-                  <span class="badge">ScrollMagic</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 14: Publication Website -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-4"
-            data-category="dynamic"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images/dynamic/publication.png"
-                class="card-img-top"
-                alt="Publication Website"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Publication Website</h5>
-                <p class="card-text">
-                  A publication platform similar to Editage with academic
-                  resources, submission management, and editing services.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">Bootstrap</span>
-                  <span class="badge">JavaScript</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 15: Midland Parking -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
-            data-category="dynamic"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images/dynamic/midland.png"
-                class="card-img-top"
-                alt="Midland Parking"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Midland Parking Website</h5>
-                <p class="card-text">
-                  A parking service website with location finder, online booking
-                  system, and payment processing integration.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">Bootstrap</span>
-                  <span class="badge">jQuery</span>
-                  <span class="badge">Leaflet.js</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 16: Elite Academic Expert -->
-          <div
-            class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
-            data-category="dynamic"
-          >
-            <div class="card project-card h-100 tilt-effect">
-              <img
-                src="images/dynamic/acdemic.png"
-                class="card-img-top"
-                alt="Elite Academic Expert"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Elite Academic Expert</h5>
-                <p class="card-text">
-                  A comprehensive academic services platform offering research
-                  assistance, thesis writing, and academic consulting with
-                  secure payment processing and client management system.
-                </p>
-                <div class="project-tags mb-3">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">Bootstrap</span>
-                  <span class="badge">jQuery</span>
-                  <span class="badge">JavaScript</span>
-                  <span class="badge">Chart.js</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="btn btn-sm btn-outline-primary w-100"
-                    ><i class="fas fa-external-link-alt me-1"></i>View Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Floating shapes -->
-      <div class="floating-shape shape-6 parallax" data-speed="0.4"></div>
-    </section>
-
-    <!-- Project Spotlight -->
-    <section id="project-spotlight" class="py-5">
-      <div class="container">
-        <div class="section-title text-center mb-5 fade-in-up">
-          <h2>Project Spotlight</h2>
-          <div class="title-line"></div>
-        </div>
-
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0 fade-in-up">
-            <div class="spotlight-image">
-              <img
-                src="images/smart-dest/main.png"
-                alt="Toureast Website Spotlight"
-                class="img-fluid rounded shadow"
-              />
-            </div>
-
-            <!-- Interactive image hover feature -->
-            <div class="image-hover-overlay">
-              <div class="hover-content">
-                <span class="hover-icon"
-                  ><i class="fas fa-search-plus"></i
-                ></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 fade-in-up delay-2">
-            <div class="spotlight-content">
-              <h3>Toureast Website</h3>
-              <div class="mb-4">
-                <h5>The Challenge</h5>
-                <p>
-                  The client needed a comprehensive travel platform that would
-                  showcase destinations, provide easy booking capabilities, and
-                  deliver a seamless user experience across all devices.
-                </p>
-              </div>
-
-              <div class="mb-4">
-                <h5>My Solution</h5>
-                <p>
-                  I developed a responsive website using HTML5, CSS3, Bootstrap,
-                  and jQuery that featured:
-                </p>
-                <ul>
-                  <li>Interactive destination maps with Leaflet.js</li>
-                  <li>Custom booking system with calendar integration</li>
-                  <li>
-                    Responsive design that works on mobile, tablet, and desktop
-                  </li>
-                  <li>Performance optimization for fast loading times</li>
-                  <li>SEO-friendly structure and metadata</li>
-                </ul>
-              </div>
-
-              <div class="mb-4">
-                <h5>Tech Stack</h5>
-                <div class="spotlight-tags">
-                  <span class="badge">HTML5</span>
-                  <span class="badge">CSS3</span>
-                  <span class="badge">Bootstrap 5</span>
-                  <span class="badge">jQuery</span>
-                  <span class="badge">Leaflet.js</span>
-                </div>
-              </div>
-
-              <div>
-                <h5>Results</h5>
-                <p>
-                  The website resulted in a 40% increase in online bookings and
-                  a 25% decrease in bounce rate, providing a better user
-                  experience and higher conversion rates for the client.
-                </p>
-              </div>
+          <div class="row">
+            <div class="col-lg-6 fade-in-up">
+              <h3>Professional Summary</h3>
+              <p>
+                I'm a passionate Frontend Web Developer with expertise in
+                creating responsive web applications and implementing complex
+                UI/UX designs. I have extensive experience working remotely with
+                international teams, bringing creative solutions to digital
+                challenges.
+              </p>
 
               <div class="mt-4">
-                <a href="https://www.toureast.net/" class="btn btn-primary"
-                  ><i class="fas fa-external-link-alt me-2"></i>View Project</a
-                >
+                <h4>Education</h4>
+                <div class="education-item">
+                  <h5>Bachelor of Science in Information Technology</h5>
+                  <p>University of Gujrat | CGPA: 3.26/4.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-info fade-in-up delay-2">
+                <div class="info-item">
+                  <h4>Languages</h4>
+                  <span class="badge me-2 mb-2">English</span>
+                  <span class="badge me-2 mb-2">Urdu</span>
+                </div>
+
+                <div class="info-item mt-3">
+                  <h4>Certifications</h4>
+                  <div class="certification-item">
+                    <i class="fas fa-certificate me-2"></i>
+                    <span>ReactJS Development</span>
+                  </div>
+                  <div class="certification-item">
+                    <i class="fas fa-certificate me-2"></i>
+                    <span>Data Analysis</span>
+                  </div>
+                </div>
+
+                <div class="about-counters row mt-4 stagger-group">
+                  <div class="col-6">
+                    <div
+                      class="counter-box text-center tilt-effect stagger-item"
+                    >
+                      <div class="counter" data-count="2">0</div>
+                      <p>Years Experience</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div
+                      class="counter-box text-center tilt-effect stagger-item"
+                    >
+                      <div class="counter" data-count="16">0</div>
+                      <p>Projects Completed</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Testimonials Section (Optional) -->
-    <section id="testimonials" class="py-5 bg-light">
-      <div class="container">
-        <div class="section-title text-center mb-5 fade-in-up">
-          <h2>Client Testimonials</h2>
-          <div class="title-line"></div>
-        </div>
+      <!-- Experience Section -->
+      <section id="experience" class="py-5 bg-light">
+        <div class="container">
+          <div class="section-title text-center mb-5 fade-in-up">
+            <h2>Work Experience</h2>
+            <div class="title-line"></div>
+          </div>
 
-        <div
-          id="testimonialsCarousel"
-          class="carousel slide fade-in-up"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="testimonial-item text-center">
-                <div class="testimonial-img mx-auto mb-4">
-                  <div class="avatar-circle">
-                    <i class="fas fa-user-tie"></i>
+          <div class="timeline stagger-group">
+            <!-- Job 1 -->
+            <div class="timeline-item stagger-item">
+              <div class="timeline-badge">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div class="timeline-card card tilt-effect">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <h4 class="card-title">
+                      UI/UX Designer & Frontend Developer
+                    </h4>
+                    <span class="badge status-active">Present</span>
                   </div>
-                </div>
-                <div class="testimonial-content">
-                  <p class="testimonial-text">
-                    "Rifat created an exceptional website for our travel
-                    company. The design is beautiful, intuitive, and responsive.
-                    He was always available to address our concerns and
-                    implement requested changes promptly."
+                  <h5>Dynamic Service Solutions, UK (Remote)</h5>
+                  <p class="text-muted">November 2024 - Present</p>
+                  <p>
+                    Working as a Frontend Developer to create responsive and
+                    user-friendly interfaces for web applications.
                   </p>
-                  <h5 class="client-name">Sarah Johnson</h5>
-                  <p class="client-position">CEO, Toureast</p>
+                  <div class="mt-3">
+                    <h6>Key Responsibilities:</h6>
+                    <ul>
+                      <li>
+                        Implementing responsive web designs using HTML, CSS, and
+                        Bootstrap
+                      </li>
+                      <li>
+                        Creating UI/UX designs in Figma for all website projects
+                      </li>
+                      <li>
+                        Translating Figma designs into functional frontend code
+                      </li>
+                      <li>Developing interactive UI components with jQuery</li>
+                      <li>Collaborating with international team members</li>
+                    </ul>
+                  </div>
+                  <div class="tech-stack">
+                    <span class="badge me-1">HTML5</span>
+                    <span class="badge me-1">CSS3</span>
+                    <span class="badge me-1">Bootstrap</span>
+                    <span class="badge me-1">jQuery</span>
+                    <span class="badge me-1">Figma</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="testimonial-item text-center">
-                <div class="testimonial-img mx-auto mb-4">
-                  <div class="avatar-circle">
-                    <i class="fas fa-user"></i>
+
+            <!-- Job 2 -->
+            <div class="timeline-item stagger-item delay-1">
+              <div class="timeline-badge">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div class="timeline-card card tilt-effect">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <h4 class="card-title">Frontend Developer</h4>
+                    <span class="badge status-active">Present</span>
                   </div>
-                </div>
-                <div class="testimonial-content">
-                  <p class="testimonial-text">
-                    "Working with Rifat was a pleasure. He understood our
-                    requirements quickly and delivered a high-quality admin
-                    dashboard that exceeded our expectations. His attention to
-                    detail and problem-solving skills are impressive."
+                  <h5>Angelic Insurance, Australia (Remote)</h5>
+                  <p class="text-muted">November 2024 - Present</p>
+                  <p>
+                    Developing and maintaining responsive web interfaces for
+                    insurance management systems.
                   </p>
-                  <h5 class="client-name">Michael Brown</h5>
-                  <p class="client-position">CTO, Angelic Insurance</p>
+                  <div class="mt-3">
+                    <h6>Key Responsibilities:</h6>
+                    <ul>
+                      <li>
+                        Building responsive interfaces with Bootstrap and custom
+                        CSS
+                      </li>
+                      <li>Implementing client-side validation with jQuery</li>
+                      <li>Creating interactive data visualizations</li>
+                    </ul>
+                  </div>
+                  <div class="tech-stack">
+                    <span class="badge me-1">HTML5</span>
+                    <span class="badge me-1">CSS3</span>
+                    <span class="badge me-1">Bootstrap</span>
+                    <span class="badge me-1">jQuery</span>
+                    <span class="badge me-1">Chart.js</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="testimonial-item text-center">
-                <div class="testimonial-img mx-auto mb-4">
-                  <div class="avatar-circle">
-                    <i class="fas fa-user-tie"></i>
+
+            <!-- Job 3 -->
+            <div class="timeline-item stagger-item">
+              <div class="timeline-badge">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div class="timeline-card card tilt-effect">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <h4 class="card-title">Frontend Developer</h4>
+                    <span class="badge">Past</span>
+                  </div>
+                  <h5>TakweenIt, Oman (Hybrid)</h5>
+                  <p class="text-muted">March 2024 - October 2024</p>
+                  <p>
+                    Developed frontend interfaces for enterprise applications
+                    with a focus on performance and user experience.
+                  </p>
+                  <div class="mt-3">
+                    <h6>Key Responsibilities:</h6>
+                    <ul>
+                      <li>
+                        Designing and implementing UI components using Bootstrap
+                      </li>
+                      <li>
+                        Building React.js components for interactive user
+                        interfaces
+                      </li>
+                      <li>
+                        Developing custom themes and modules for DNN
+                        (DotNetNuke) CMS
+                      </li>
+                      <li>
+                        Optimizing web performance for better user experience
+                      </li>
+                      <li>
+                        Collaborating with backend developers to integrate APIs
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tech-stack">
+                    <span class="badge me-1">HTML5</span>
+                    <span class="badge me-1">CSS3</span>
+                    <span class="badge me-1">Bootstrap</span>
+                    <span class="badge me-1">jQuery</span>
+                    <span class="badge me-1">React.js</span>
+                    <span class="badge me-1">DNN CMS</span>
                   </div>
                 </div>
-                <div class="testimonial-content">
-                  <p class="testimonial-text">
-                    "Rifat's expertise in frontend development helped us create
-                    an outstanding user interface for our booking platform. His
-                    code is clean, well-organized, and he delivered the project
-                    on time and within budget."
+              </div>
+            </div>
+
+            <!-- Job 4 -->
+            <div class="timeline-item stagger-item">
+              <div class="timeline-badge">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div class="timeline-card card tilt-effect">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <h4 class="card-title">Frontend Developer</h4>
+                    <span class="badge">Past</span>
+                  </div>
+                  <h5>Smart Destinations, Islamabad (OnSite)</h5>
+                  <p class="text-muted">September 2023 - March 2024</p>
+                  <p>
+                    Developed and maintained tourism-related web applications
+                    with a focus on user experience and responsive design.
                   </p>
-                  <h5 class="client-name">Emily Parker</h5>
-                  <p class="client-position">
-                    Product Manager, Smart Destinations
-                  </p>
+                  <div class="mt-3">
+                    <h6>Key Responsibilities:</h6>
+                    <ul>
+                      <li>
+                        Implementing responsive designs for travel websites
+                      </li>
+                      <li>Creating interactive maps and booking interfaces</li>
+                      <li>
+                        Developing with Vue.js and integrating Laravel Blade
+                        templates
+                      </li>
+                      <li>
+                        Creating UI/UX designs in Figma and Canva for client
+                        approval
+                      </li>
+                      <li>
+                        Building responsive interfaces with Tailwind CSS and
+                        Bootstrap
+                      </li>
+                      <li>Optimizing frontend performance</li>
+                    </ul>
+                  </div>
+                  <div class="tech-stack">
+                    <span class="badge me-1">HTML5</span>
+                    <span class="badge me-1">CSS3</span>
+                    <span class="badge me-1">Bootstrap</span>
+                    <span class="badge me-1">jQuery</span>
+                    <span class="badge me-1">Leaflet.js</span>
+                    <span class="badge me-1">Vue.js</span>
+                    <span class="badge me-1">Tailwind CSS</span>
+                    <span class="badge me-1">Laravel Blade</span>
+                    <span class="badge me-1">Figma</span>
+                    <span class="badge me-1">Canva</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#testimonialsCarousel"
-            data-bs-slide="prev"
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="py-5">
+        <div class="container">
+          <div class="section-title text-center mb-5 fade-in-up">
+            <h2>Technical Skills</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="row">
+            <!-- Frontend Skills -->
+            <div class="col-lg-6 mb-4 fade-in-up">
+              <div class="card skills-card h-100">
+                <div class="card-header">
+                  <h4 class="mb-0"><i class="fas fa-code me-2"></i>Frontend</h4>
+                </div>
+                <div class="card-body">
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <h6>HTML5</h6>
+                      <span>90%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 90%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item mt-3">
+                    <div class="d-flex justify-content-between">
+                      <h6>CSS3</h6>
+                      <span>85%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 85%"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item mt-3">
+                    <div class="d-flex justify-content-between">
+                      <h6>JavaScript</h6>
+                      <span>80%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 80%"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item mt-3">
+                    <div class="d-flex justify-content-between">
+                      <h6>ReactJS</h6>
+                      <span>75%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 75%"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item mt-3">
+                    <div class="d-flex justify-content-between">
+                      <h6>Vue.js</h6>
+                      <span>70%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item mt-3">
+                    <div class="d-flex justify-content-between">
+                      <h6>Chart.js</h6>
+                      <span>70%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item mt-3">
+                    <div class="d-flex justify-content-between">
+                      <h6>Leaflet.js</h6>
+                      <span>65%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 65%"
+                        aria-valuenow="65"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item mt-3">
+                    <div class="d-flex justify-content-between">
+                      <h6>Laravel Blade</h6>
+                      <span>65%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 65%"
+                        aria-valuenow="65"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item mt-3">
+                    <div class="d-flex justify-content-between">
+                      <h6>HTMX</h6>
+                      <span>60%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 60%"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Other Skills -->
+            <div class="col-lg-6 fade-in-up delay-2">
+              <div class="row">
+                <!-- CSS Frameworks -->
+                <div class="col-12 mb-4">
+                  <div class="card skills-card">
+                    <div class="card-header">
+                      <h4 class="mb-0">
+                        <i class="fas fa-paint-brush me-2"></i>CSS Frameworks
+                      </h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="row stagger-group">
+                        <div class="col-6">
+                          <div class="skill-tag stagger-item">
+                            <i class="fab fa-bootstrap me-2"></i>
+                            <span>Bootstrap</span>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="skill-tag stagger-item delay-1">
+                            <i class="fab fa-css3 me-2"></i>
+                            <span>Tailwind CSS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CMS -->
+                <div class="col-12 mb-4">
+                  <div class="card skills-card">
+                    <div class="card-header">
+                      <h4 class="mb-0">
+                        <i class="fas fa-file-alt me-2"></i>CMS
+                      </h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="row stagger-group">
+                        <div class="col-6">
+                          <div class="skill-tag stagger-item">
+                            <i class="fab fa-wordpress me-2"></i>
+                            <span>WordPress</span>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="skill-tag stagger-item delay-1">
+                            <i class="fas fa-database me-2"></i>
+                            <span>DNN CMS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Design Tools -->
+                <div class="col-12 mb-4">
+                  <div class="card skills-card">
+                    <div class="card-header">
+                      <h4 class="mb-0">
+                        <i class="fas fa-pencil-ruler me-2"></i>Design Tools
+                      </h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="row stagger-group">
+                        <div class="col-6">
+                          <div class="skill-tag stagger-item">
+                            <i class="fab fa-figma me-2"></i> <span>Figma</span>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="skill-tag stagger-item delay-1">
+                            <i class="fas fa-paint-brush me-2"></i>
+                            <span>Canva</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="col-12">
+                  <div class="card skills-card">
+                    <div class="card-header">
+                      <h4 class="mb-0">
+                        <i class="fas fa-tools me-2"></i>Tools & Others
+                      </h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="row skill-tools stagger-group">
+                        <div class="col-6 mb-3">
+                          <div class="skill-tag">
+                            <i class="fab fa-git-alt me-2"></i>
+                            <span>Git</span>
+                          </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                          <div class="skill-tag">
+                            <i class="fab fa-github me-2"></i>
+                            <span>GitHub</span>
+                          </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                          <div class="skill-tag">
+                            <i class="fab fa-jira me-2"></i>
+                            <span>Jira</span>
+                          </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                          <div class="skill-tag">
+                            <i class="fas fa-code me-2"></i>
+                            <span>VS Code</span>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="skill-tag">
+                            <i class="fas fa-window-maximize me-2"></i>
+                            <span>Visual Studio</span>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="skill-tag">
+                            <i class="fab fa-chrome me-2"></i>
+                            <span>Chrome DevTools</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating shapes for design -->
+        <div class="floating-shape shape-4 parallax" data-speed="0.3"></div>
+        <div class="floating-shape shape-5 parallax" data-speed="0.2"></div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="py-5 bg-light">
+        <div class="container">
+          <div class="section-title text-center mb-5 fade-in-up">
+            <h2>My Projects</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="project-filters text-center mb-4 fade-in-up">
+            <button
+              class="btn btn-sm btn-outline-primary active me-2 mb-2 filter-btn"
+              data-filter="all"
+            >
+              All
+            </button>
+            <button
+              class="btn btn-sm btn-outline-primary me-2 mb-2 filter-btn"
+              data-filter="smart-dest"
+            >
+              Smart Destinations
+            </button>
+            <button
+              class="btn btn-sm btn-outline-primary me-2 mb-2 filter-btn"
+              data-filter="angelic"
+            >
+              Angelic Insurance
+            </button>
+            <button
+              class="btn btn-sm btn-outline-primary me-2 mb-2 filter-btn"
+              data-filter="dynamic"
+            >
+              Dynamic Solutions
+            </button>
+            <button
+              class="btn btn-sm btn-outline-primary me-2 mb-2 filter-btn"
+              data-filter="takween"
+            >
+              TakweenIt
+            </button>
+          </div>
+
+          <div class="row project-grid stagger-group">
+            <!-- Project 1: Angelic Insurance -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-2"
+              data-category="angelic"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images/angelic/angelic-inurance.png"
+                  class="card-img-top"
+                  alt="Angelic Insurance"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Angelic Insurance</h5>
+                  <p class="card-text">
+                    A comprehensive insurance company website with quote
+                    calculator, policy management, and customer portal access.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">Bootstrap</span>
+                    <span class="badge">jQuery</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://www.angelicinsurance.com.au/"
+                      class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: Wholly Digital -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-3"
+              data-category="angelic"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images/angelic/wholly-digital.png"
+                  class="card-img-top"
+                  alt="Wholly Digital"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Wholly Digital Company</h5>
+                  <p class="card-text">
+                    Corporate website for Angelic Insurance's partner company,
+                    featuring service offerings, team profiles, and client
+                    success stories.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">Bootstrap</span>
+                    <span class="badge">jQuery</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://wholydigital.com.au/"
+                      class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: Angelic Real Estate Dashboard -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
+              data-category="angelic"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images/angelic/angelic-will.png"
+                  class="card-img-top"
+                  alt="Angelic Real Estate Dashboard"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Angelic Will & Estate Dashboard</h5>
+                  <p class="card-text">
+                    A comprehensive will & estate management dashboard with
+                    property listings, client management, and analytics
+                    visualization.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">Bootstrap</span>
+                    <span class="badge">Chart.js</span>
+                    <span class="badge">jQuery</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4: Oman Library -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
+              data-category="takween"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images/takween/oman-lib.png"
+                  class="card-img-top"
+                  alt="Oman Library"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Oman Library</h5>
+                  <p class="card-text">
+                    A digital library platform developed for TakweenIt with
+                    advanced search capabilities, user accounts, and resource
+                    management.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">Bootstrap</span>
+                    <span class="badge">jQuery</span>
+                    <span class="badge">DNN CMS</span>
+                    <span class="badge">Chart.js</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://www.mol.om/?lang=en-GB"
+                      class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5: Muscat Stock Exchange (MSX) -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
+              data-category="takween"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images/takween/mse.png"
+                  class="card-img-top"
+                  alt="Muscat Stock Exchange"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Muscat Stock Exchange (MSX)</h5>
+                  <p class="card-text">
+                    A comprehensive financial platform for the Muscat Stock
+                    Exchange featuring real-time market data, investor tools,
+                    and corporate information portal.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">Bootstrap</span>
+                    <span class="badge">jQuery</span>
+                    <span class="badge">DNN CMS</span>
+                    <span class="badge">Chart.js</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://www.msx.om/"
+                      class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6: Toureast Travel Website (Main Website) -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
+              data-category="smart-dest"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images/smart-dest/toureast-main.png"
+                  class="card-img-top"
+                  alt="Toureast Travel Website"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Toureast Website (Main)</h5>
+                  <p class="card-text">
+                    A comprehensive travel platform for Smart Destinations with
+                    interactive maps, booking system, and destination guides.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">Vue-Bootstrap</span>
+                    <span class="badge">jQuery</span>
+                    <span class="badge">Leaflet.js</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://www.toureast.net/"
+                      class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 7: Toureast Admin Panel -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
+              data-category="smart-dest"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images/smart-dest/toureast-admin.png"
+                  class="card-img-top"
+                  alt="Toureast Admin Panel"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Toureast Admin Panel</h5>
+                  <p class="card-text">
+                    A powerful dashboard for managing travel packages, bookings,
+                    user accounts, and analytics for the Toureast travel
+                    platform.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">Bootstrap</span>
+                    <span class="badge">Chart.js</span>
+                    <span class="badge">jQuery</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://app.toureast.net/admin/"
+                      class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 8: Online Booking System -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
+              data-category="smart-dest"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images/smart-dest/online-toureast.png"
+                  class="card-img-top"
+                  alt="Online Booking System"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Online Booking System</h5>
+                  <p class="card-text">
+                    A streamlined booking interface for Toureast with calendar
+                    integration, real-time availability, and secure payment
+                    processing.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">Vue-Bootstrap</span>
+                    <span class="badge">jQuery</span>
+                    <span class="badge">JavaScript</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://online.toureast.net/en/"
+                      class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 9: Partner Portal -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
+              data-category="smart-dest"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images/smart-dest/toureast-partner.png"
+                  class="card-img-top"
+                  alt="Partner Portal"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Partner Portal</h5>
+                  <p class="card-text">
+                    A dedicated portal for travel agents and partners to manage
+                    bookings, commission tracking, and promotional content for
+                    Toureast.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge"> Vue-tailwind</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://partner.toureast.net/"
+                      class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 10: Collaboration Hub -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
+              data-category="smart-dest"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images/smart-dest/collaboration-hub.png"
+                  class="card-img-top"
+                  alt="Collaboration Hub"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Collaboration Hub</h5>
+                  <p class="card-text">
+                    A centralized platform for Smart Destinations teams to
+                    collaborate on travel packages, marketing campaigns, and
+                    customer relationships.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">Bootstrap</span>
+                    <span class="badge">jQuery</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://collaborationhub.info/"
+                      class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 11: Travel Pakistani -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
+              data-category="smart-dest"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images/smart-dest/travelpakistani.png"
+                  class="card-img-top"
+                  alt="Travel Pakistani"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Travel Pakistani</h5>
+                  <p class="card-text">
+                    A specialized travel platform for Smart Destinations focused
+                    on Pakistani tourism, featuring local destinations, cultural
+                    experiences, and tour packages.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">Bootstrap</span>
+                    <span class="badge">jQuery</span>
+                    <span class="badge">Leaflet.js</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://travelpakistani.com/"
+                      class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 12: Havion Digital Product -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item"
+              data-category="dynamic"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images/dynamic/hivion.png"
+                  class="card-img-top"
+                  alt="Havion Digital Product"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Havion Digital Product</h5>
+                  <p class="card-text">
+                    An animated website for a digital product company showcasing
+                    innovative solutions with modern design and seamless
+                    animations.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">GSAP</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 13: Havica Digital Product -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-1"
+              data-category="dynamic"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images//dynamic/havica.png"
+                  class="card-img-top"
+                  alt="Havica Digital Product"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Havica Digital Product</h5>
+                  <p class="card-text">
+                    A stunning animated website for digital products with
+                    interactive UI elements and smooth scrolling effects.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">ScrollMagic</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 14: Publication Website -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-4"
+              data-category="dynamic"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images/dynamic/publication.png"
+                  class="card-img-top"
+                  alt="Publication Website"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Publication Website</h5>
+                  <p class="card-text">
+                    A publication platform similar to Editage with academic
+                    resources, submission management, and editing services.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">Bootstrap</span>
+                    <span class="badge">JavaScript</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 15: Midland Parking -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
+              data-category="dynamic"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images/dynamic/midland.png"
+                  class="card-img-top"
+                  alt="Midland Parking"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Midland Parking Website</h5>
+                  <p class="card-text">
+                    A parking service website with location finder, online
+                    booking system, and payment processing integration.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">Bootstrap</span>
+                    <span class="badge">jQuery</span>
+                    <span class="badge">Leaflet.js</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 16: Elite Academic Expert -->
+            <div
+              class="col-md-6 col-lg-4 mb-4 project-item stagger-item delay-5"
+              data-category="dynamic"
+            >
+              <div class="card project-card h-100 tilt-effect">
+                <img
+                  src="images/dynamic/acdemic.png"
+                  class="card-img-top"
+                  alt="Elite Academic Expert"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Elite Academic Expert</h5>
+                  <p class="card-text">
+                    A comprehensive academic services platform offering research
+                    assistance, thesis writing, and academic consulting with
+                    secure payment processing and client management system.
+                  </p>
+                  <div class="project-tags mb-3">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">Bootstrap</span>
+                    <span class="badge">jQuery</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Chart.js</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-outline-primary w-100"
+                      ><i class="fas fa-external-link-alt me-1"></i>View Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating shapes -->
+        <div class="floating-shape shape-6 parallax" data-speed="0.4"></div>
+      </section>
+
+      <!-- Project Spotlight -->
+      <section id="project-spotlight" class="py-5">
+        <div class="container">
+          <div class="section-title text-center mb-5 fade-in-up">
+            <h2>Project Spotlight</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0 fade-in-up">
+              <div class="spotlight-image">
+                <img
+                  src="images/smart-dest/main.png"
+                  alt="Toureast Website Spotlight"
+                  class="img-fluid rounded shadow"
+                />
+              </div>
+
+              <!-- Interactive image hover feature -->
+              <div class="image-hover-overlay">
+                <div class="hover-content">
+                  <span class="hover-icon"
+                    ><i class="fas fa-search-plus"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 fade-in-up delay-2">
+              <div class="spotlight-content">
+                <h3>Toureast Website</h3>
+                <div class="mb-4">
+                  <h5>The Challenge</h5>
+                  <p>
+                    The client needed a comprehensive travel platform that would
+                    showcase destinations, provide easy booking capabilities,
+                    and deliver a seamless user experience across all devices.
+                  </p>
+                </div>
+
+                <div class="mb-4">
+                  <h5>My Solution</h5>
+                  <p>
+                    I developed a responsive website using HTML5, CSS3,
+                    Bootstrap, and jQuery that featured:
+                  </p>
+                  <ul>
+                    <li>Interactive destination maps with Leaflet.js</li>
+                    <li>Custom booking system with calendar integration</li>
+                    <li>
+                      Responsive design that works on mobile, tablet, and
+                      desktop
+                    </li>
+                    <li>Performance optimization for fast loading times</li>
+                    <li>SEO-friendly structure and metadata</li>
+                  </ul>
+                </div>
+
+                <div class="mb-4">
+                  <h5>Tech Stack</h5>
+                  <div class="spotlight-tags">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">Bootstrap 5</span>
+                    <span class="badge">jQuery</span>
+                    <span class="badge">Leaflet.js</span>
+                  </div>
+                </div>
+
+                <div>
+                  <h5>Results</h5>
+                  <p>
+                    The website resulted in a 40% increase in online bookings
+                    and a 25% decrease in bounce rate, providing a better user
+                    experience and higher conversion rates for the client.
+                  </p>
+                </div>
+
+                <div class="mt-4">
+                  <a href="https://www.toureast.net/" class="btn btn-primary"
+                    ><i class="fas fa-external-link-alt me-2"></i>View
+                    Project</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section (Optional) -->
+      <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+          <div class="section-title text-center mb-5 fade-in-up">
+            <h2>Client Testimonials</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div
+            id="testimonialsCarousel"
+            class="carousel slide fade-in-up"
+            data-bs-ride="carousel"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#testimonialsCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <div class="carousel-indicators testimonial-indicators">
-            <button
-              type="button"
-              data-bs-target="#testimonialsCarousel"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#testimonialsCarousel"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#testimonialsCarousel"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-      <div class="container">
-        <div class="section-title text-center mb-5 fade-in-up">
-          <h2>Contact Me</h2>
-          <div class="title-line"></div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-8 col-md-10 fade-in-up">
-            <div class="contact-info text-center">
-              <h3>Let's Connect</h3>
-              <p class="mb-5">
-                Feel free to reach out for collaboration, job opportunities, or
-                just to say hello!
-              </p>
-              <div class="row justify-content-center">
-                <div class="col-md-4 mb-4">
-                  <div
-                    class="info-item d-flex flex-column align-items-center stagger-item"
-                  >
-                    <div class="icon-box mb-3">
-                      <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="text-center">
-                      <h5>Email</h5>
-                      <p>
-                        <a href="mailto:rifatzaman55568@gmail.com"
-                          >rifatzaman55568@gmail.com</a
-                        >
-                      </p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="testimonial-item text-center">
+                  <div class="testimonial-img mx-auto mb-4">
+                    <div class="avatar-circle">
+                      <i class="fas fa-user-tie"></i>
                     </div>
                   </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                  <div
-                    class="info-item d-flex flex-column align-items-center stagger-item delay-1"
-                  >
-                    <div class="icon-box mb-3">
-                      <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="text-center">
-                      <h5>Phone</h5>
-                      <p><a href="tel:+923279115540">0327-9115540</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                  <div
-                    class="info-item d-flex flex-column align-items-center stagger-item delay-2"
-                  >
-                    <div class="icon-box mb-3">
-                      <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="text-center">
-                      <h5>Location</h5>
-                      <p>Lahore, Pakistan</p>
-                    </div>
+                  <div class="testimonial-content">
+                    <p class="testimonial-text">
+                      "Rifat created an exceptional website for our travel
+                      company. The design is beautiful, intuitive, and
+                      responsive. He was always available to address our
+                      concerns and implement requested changes promptly."
+                    </p>
+                    <h5 class="client-name">Sarah Johnson</h5>
+                    <p class="client-position">CEO, Toureast</p>
                   </div>
                 </div>
               </div>
-              <div class="social-links mt-5 stagger-group">
-                <a
-                  href="https://www.linkedin.com/in/rifat-zaman-/"
-                  class="social-link stagger-item"
-                  title="LinkedIn"
-                >
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a
-                  href="https://github.com/rifatzaman5"
-                  class="social-link stagger-item delay-1"
-                  title="GitHub"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-                <a
-                  href="https://www.behance.net/muhammadarham1"
-                  class="social-link stagger-item delay-2"
-                  title="Behance"
-                >
-                  <i class="fab fa-behance"></i>
-                </a>
+              <div class="carousel-item">
+                <div class="testimonial-item text-center">
+                  <div class="testimonial-img mx-auto mb-4">
+                    <div class="avatar-circle">
+                      <i class="fas fa-user"></i>
+                    </div>
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="testimonial-text">
+                      "Working with Rifat was a pleasure. He understood our
+                      requirements quickly and delivered a high-quality admin
+                      dashboard that exceeded our expectations. His attention to
+                      detail and problem-solving skills are impressive."
+                    </p>
+                    <h5 class="client-name">Michael Brown</h5>
+                    <p class="client-position">CTO, Angelic Insurance</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial-item text-center">
+                  <div class="testimonial-img mx-auto mb-4">
+                    <div class="avatar-circle">
+                      <i class="fas fa-user-tie"></i>
+                    </div>
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="testimonial-text">
+                      "Rifat's expertise in frontend development helped us
+                      create an outstanding user interface for our booking
+                      platform. His code is clean, well-organized, and he
+                      delivered the project on time and within budget."
+                    </p>
+                    <h5 class="client-name">Emily Parker</h5>
+                    <p class="client-position">
+                      Product Manager, Smart Destinations
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#testimonialsCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#testimonialsCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators testimonial-indicators">
+              <button
+                type="button"
+                data-bs-target="#testimonialsCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#testimonialsCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#testimonialsCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-5">
+        <div class="container">
+          <div class="section-title text-center mb-5 fade-in-up">
+            <h2>Contact Me</h2>
+            <div class="title-line"></div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 fade-in-up">
+              <div class="contact-info text-center">
+                <h3>Let's Connect</h3>
+                <p class="mb-5">
+                  Feel free to reach out for collaboration, job opportunities,
+                  or just to say hello!
+                </p>
+                <div class="row justify-content-center">
+                  <div class="col-md-4 mb-4">
+                    <div
+                      class="info-item d-flex flex-column align-items-center stagger-item"
+                    >
+                      <div class="icon-box mb-3">
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                      <div class="text-center">
+                        <h5>Email</h5>
+                        <p>
+                          <a href="mailto:rifatzaman55568@gmail.com"
+                            >rifatzaman55568@gmail.com</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div
+                      class="info-item d-flex flex-column align-items-center stagger-item delay-1"
+                    >
+                      <div class="icon-box mb-3">
+                        <i class="fas fa-phone"></i>
+                      </div>
+                      <div class="text-center">
+                        <h5>Phone</h5>
+                        <p><a href="tel:+923279115540">0327-9115540</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div
+                      class="info-item d-flex flex-column align-items-center stagger-item delay-2"
+                    >
+                      <div class="icon-box mb-3">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="text-center">
+                        <h5>Location</h5>
+                        <p>Lahore, Pakistan</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="social-links mt-5 stagger-group">
+                  <a
+                    href="https://www.linkedin.com/in/rifat-zaman-/"
+                    class="social-link stagger-item"
+                    title="LinkedIn"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    href="https://github.com/rifatzaman5"
+                    class="social-link stagger-item delay-1"
+                    title="GitHub"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://www.behance.net/muhammadarham1"
+                    class="social-link stagger-item delay-2"
+                    title="Behance"
+                  >
+                    <i class="fab fa-behance"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Floating shapes -->
-      <div class="floating-shape shape-7 parallax" data-speed="0.3"></div>
-    </section>
+        <!-- Floating shapes -->
+        <div class="floating-shape shape-7 parallax" data-speed="0.3"></div>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer id="footer" class="py-5">
