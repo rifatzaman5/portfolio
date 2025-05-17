@@ -589,6 +589,53 @@ $(document).ready(function () {
       document.body.appendChild(script);
     }
   });
+
+  // Header scroll behavior
+  window.addEventListener("scroll", function () {
+    const header = document.getElementById("header");
+    const backToTop = document.querySelector(".back-to-top");
+
+    if (window.scrollY > 50) {
+      header.classList.add("header-scrolled");
+      backToTop.classList.add("active");
+    } else {
+      header.classList.remove("header-scrolled");
+      backToTop.classList.remove("active");
+    }
+  });
+
+  // Back to Top Button Click Handler
+  document
+    .querySelector(".back-to-top")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+
+  // Mobile Navigation
+  document.addEventListener("DOMContentLoaded", function () {
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+
+    if (navbarToggler && navbarCollapse) {
+      navbarToggler.addEventListener("click", function () {
+        navbarCollapse.classList.toggle("show");
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", function (event) {
+        if (
+          !navbarToggler.contains(event.target) &&
+          !navbarCollapse.contains(event.target)
+        ) {
+          navbarCollapse.classList.remove("show");
+        }
+      });
+    }
+  });
 });
 
 /*--------------------------------------------------------------
