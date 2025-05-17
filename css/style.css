@@ -19,12 +19,10 @@
   --grey-300: #cbd5e1;
   --grey-400: #94a3b8;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.1),
-    0 5px 10px -5px rgba(99, 102, 241, 0.05);
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   --box-shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --box-shadow-hover: 0 20px 35px -10px rgba(99, 102, 241, 0.2),
-    0 10px 20px -10px rgba(99, 102, 241, 0.1);
+  --box-shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.1);
   --gradient-primary: linear-gradient(
     135deg,
     var(--primary-light) 0%,
@@ -1634,7 +1632,8 @@ a:hover {
   }
 
   .hero-img {
-    max-width: 250px;
+    max-width: 250px !important;
+    height: auto;
   }
 }
 
@@ -1966,7 +1965,7 @@ section.py-5 {
 # Custom Background Classes
 --------------------------------------------------------------*/
 .bg-light {
-  background: linear-gradient(120deg, #e0e7ff 0%, #ede9fe 100%) !important;
+  background: #e0e7ff !important;
 }
 
 /* Base styles */
@@ -1978,16 +1977,6 @@ body {
   padding: 0;
   position: relative;
   scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  color: var(--text-color);
-  line-height: 1.7;
-  background-color: var(--light-color);
-  background-image: linear-gradient(120deg, #f0f5ff 0%, #eef2ff 100%);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Typography */
@@ -2038,7 +2027,7 @@ section {
 }
 
 .btn-primary {
-  background: var(--gradient-primary);
+  background: var(--primary-color);
   border: none;
   color: white;
 }
@@ -2120,7 +2109,7 @@ section {
 .avatar-circle {
   width: 100px;
   height: 100px;
-  background: var(--gradient-primary);
+  background: var(--primary-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -2207,4 +2196,245 @@ img {
 .avatar-circle {
   transform: translateZ(0);
   backface-visibility: hidden;
+}
+
+/* Mobile-first optimizations */
+@media (max-width: 768px) {
+  /* Disable animations on mobile */
+  .fade-in-up,
+  .stagger-item,
+  .card,
+  .project-card,
+  .avatar-circle,
+  .hero-img,
+  .floating-shape,
+  .icon-box,
+  .social-link {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+
+  /* Reduce image sizes */
+  .hero-img {
+    max-width: 250px !important;
+    height: auto;
+  }
+
+  .project-card .card-img-top {
+    height: 160px !important;
+  }
+
+  .testimonial-img img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .avatar-circle {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  /* Optimize background effects */
+  #hero::before,
+  #hero::after {
+    display: none;
+  }
+
+  /* Reduce padding and margins */
+  section {
+    padding: 40px 0 !important;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  /* Optimize card shadows */
+  .card,
+  .project-card {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+  }
+}
+
+/* Performance optimizations */
+img {
+  max-width: 100%;
+  height: auto;
+  will-change: auto;
+}
+
+/* Reduce animation complexity */
+.floating-shape {
+  display: none;
+}
+
+/* Optimize transitions */
+.card,
+.btn,
+.avatar-circle {
+  transition: transform 0.3s ease;
+}
+
+/* Remove unnecessary effects */
+.hero-image-glow,
+.hero-img::before {
+  display: none;
+}
+
+/* Optimize background gradients */
+body {
+  background: #f0f5ff;
+}
+
+.bg-light {
+  background: #e0e7ff !important;
+}
+
+/* Remove complex gradients */
+.hero-buttons .btn-primary {
+  background: var(--primary-color);
+}
+
+.hero-buttons .btn-outline-primary {
+  border-color: var(--primary-color);
+}
+
+/* Optimize card backgrounds */
+.card,
+.project-card {
+  background: white;
+  backdrop-filter: none;
+}
+
+/* Remove complex animations */
+@keyframes morph {
+  from {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  to {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+
+/* Optimize hover effects */
+.card:hover,
+.project-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Remove unnecessary transitions */
+.navbar-brand:after,
+.navbar-nav .nav-link:after {
+  transition: none;
+}
+
+/* Optimize section backgrounds */
+section {
+  background: white;
+}
+
+/* Remove complex shadows */
+.avatar-circle {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Optimize button effects */
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Remove complex gradients from buttons */
+.btn-primary {
+  background: var(--primary-color);
+}
+
+/* Optimize image containers */
+.hero-image-container {
+  perspective: none;
+}
+
+/* Remove unnecessary filters */
+.hero-img {
+  filter: none;
+}
+
+/* Optimize background effects */
+#hero {
+  background: #f0f5ff;
+}
+
+/* Remove complex animations */
+@keyframes float-slow {
+  from {
+    transform: none;
+  }
+  to {
+    transform: none;
+  }
+}
+
+/* Optimize card transitions */
+.project-card .card-img-top {
+  transition: none;
+}
+
+/* Remove unnecessary effects */
+.project-card:hover .card-img-top {
+  transform: none;
+}
+
+/* Optimize social links */
+.social-link {
+  transition: none;
+}
+
+.social-link:hover {
+  transform: none;
+}
+
+/* Remove complex gradients */
+.avatar-circle {
+  background: var(--primary-color);
+}
+
+/* Optimize testimonial effects */
+.testimonial-text::before,
+.testimonial-text::after {
+  display: none;
+}
+
+/* Remove unnecessary animations */
+@keyframes pulse {
+  from {
+    box-shadow: none;
+  }
+  to {
+    box-shadow: none;
+  }
+}
+
+/* Optimize status badges */
+.status-active::before {
+  animation: none;
+}
+
+/* Remove complex transitions */
+.info-item:hover .icon-box {
+  transform: none;
+}
+
+/* Optimize footer effects */
+.footer-links a:before {
+  display: none;
+}
+
+/* Remove unnecessary hover effects */
+.footer-links a:hover {
+  padding-left: 0;
+}
+
+/* Optimize social links in footer */
+#footer .social-link:hover {
+  transform: none;
 }
