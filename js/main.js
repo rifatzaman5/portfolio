@@ -469,31 +469,125 @@ $(document).ready(function () {
     });
   }
 
-  // Smooth scrolling function
-  function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      const headerOffset = 80; // Adjust this value based on your header height
-      const elementPosition = section.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+  // Optimize JavaScript performance
+  document.addEventListener("DOMContentLoaded", function () {
+    // Cache DOM elements
+    const header = document.getElementById("header");
+    const backToTop = document.querySelector(".back-to-top");
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+    // Smooth scrolling function
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        const headerOffset = 80;
+        const elementPosition = section.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
     }
-  }
 
-  // Add click event listeners to all navigation links
-  document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    navLinks.forEach(link => {
-      link.addEventListener('click', function(e) {
+    // Add click event listeners to navigation links
+    navLinks.forEach((link) => {
+      link.addEventListener("click", function (e) {
         e.preventDefault();
-        const sectionId = this.getAttribute('href').substring(1);
+        const sectionId = this.getAttribute("href").substring(1);
         scrollToSection(sectionId);
       });
     });
+
+    // Header scroll effect
+    let lastScroll = 0;
+    const scrollThreshold = 50;
+
+    function handleScroll() {
+      const currentScroll = window.pageYOffset;
+
+      // Header scroll effect
+      if (currentScroll > scrollThreshold) {
+        header.classList.add("header-scrolled");
+      } else {
+        header.classList.remove("header-scrolled");
+      }
+
+      // Back to top button
+      if (currentScroll > 300) {
+        backToTop.classList.add("active");
+      } else {
+        backToTop.classList.remove("active");
+      }
+
+      lastScroll = currentScroll;
+    }
+
+    // Throttle scroll event
+    let ticking = false;
+    window.addEventListener("scroll", function () {
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+
+    // Initialize AOS
+    if (typeof AOS !== "undefined") {
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false,
+      });
+    }
+
+    // Project filtering
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const projectCards = document.querySelectorAll(".project-card");
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const filter = this.getAttribute("data-filter");
+
+        // Update active button
+        filterButtons.forEach((btn) => btn.classList.remove("active"));
+        this.classList.add("active");
+
+        // Filter projects
+        projectCards.forEach((card) => {
+          if (
+            filter === "all" ||
+            card.getAttribute("data-category") === filter
+          ) {
+            card.style.display = "block";
+            setTimeout(() => (card.style.opacity = "1"), 50);
+          } else {
+            card.style.opacity = "0";
+            setTimeout(() => (card.style.display = "none"), 300);
+          }
+        });
+      });
+    });
+
+    // Lazy load images
+    if ("loading" in HTMLImageElement.prototype) {
+      const images = document.querySelectorAll('img[loading="lazy"]');
+      images.forEach((img) => {
+        img.src = img.dataset.src;
+      });
+    } else {
+      // Fallback for browsers that don't support lazy loading
+      const script = document.createElement("script");
+      script.src =
+        "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js";
+      document.body.appendChild(script);
+    }
   });
 });
 
